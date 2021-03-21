@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="create_account.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+        <!--Nav bar code-->
+
+        <nav class="navbar">
+            <a href="index.html" class="navLogo">
+                <img src="https://i.ibb.co/c8Jzh7C/logo.png" />
+            </a>
+            <div class="navDropdown">
+                <button onclick="moreTravel()" class="navDropbtn">More Travel</button>
+                <div id="myDropdown" class="navDropdown_cont">
+                    <a href="packages.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            <path fill-rule="evenodd"
+                                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg>
+    
+                        Packages
+    
+                    </a>
+                    <a href="hotels.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            <path fill-rule="evenodd"
+                                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg>
+                        Hotels
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            <path fill-rule="evenodd"
+                                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg>
+                        Cars
+    
+                    </a>
+                    <a href="flightspage.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            <path fill-rule="evenodd"
+                                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg>
+                        Flights
+    
+                    </a>
+                    <a href="cruiser.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            <path fill-rule="evenodd"
+                                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg>
+                        Cruises
+    
+                    </a>
+                    <a href="thingstodo.html">Things to do</a>
+                    <a href="#">Tips for Me</a>
+                    <a href="#">Discover</a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            <path fill-rule="evenodd"
+                                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg>
+                        Vaction Rentals
+                    </a>
+                    <a href="#">Travel Deals</a>
+                    <a href="#">Get Inspired</a>
+                </div>
+            </div>
+    
+    
+            <a href="#" class="navA1">Espanol</a>
+            <a href="#" class="navA2">List Your property</a>
+            <a href="#" class="navA3">Support</a>
+            <a href="#" class="navA4">Trips</a>
+       
+    
+            <div class="Signin">
+                <button onclick="myFunction()" class="signinBtn">Sign In</button>
+                <div id="mySignin" class="Signin-content">
+                    <h4 class="h4_margin">Members can access discounts and special features</h4>
+                    <a href="signin.html" class="go_to_signin" id="color_white">Sign in</a>
+                    <a href="create_account.html" class="go_to_create_account" id="color_blue">Create a free account</a><br>
+                    <a href="#" class="a_margin">List of favorites</a>
+                    <hr>
+                    <a href="#" class="a_margin">Feedback</a>
+                </div>
+            </div>
+    
+        </nav>
+
+        
+    <!--Top List bar  and form HTML code-->
+    <div id="camain_div">
+        <div id="toplist">
+            <ul>
+                <a href="#">
+                    <li>Vacation packages</li>
+                    <li>Hotels</li>
+                    <li>Cars</li>
+                    <li>Flights</li>
+                    <li>Cruises</li>
+                    <li>Things to do</li>
+                    <li>Trips for Me</li>
+                    <li>Discover</li>
+                    <li>Vacation Rentals</li>
+                    <li>Travel Deals</li>
+                    <li>Get Inspired</li>
+                    <li>Mobile</li>
+                </a>
+            </ul>
+        </div>
+        <div id="h1_content">
+            <h1>Create an Account</h1>
+        </div>
+        <div id="ca">
+            <div id="cacontent">
+                <button class="apple">
+                    <img src="https://a.travel-assets.com/gss-loader/user/gss-content/images/apple-logo.svg">
+                    <p>Sign up with Apple</p>
+                </button>
+                <button class="facebook">
+                    <img src="https://a.travel-assets.com/dms-svg/social/logos-facebook-invert.svg">
+                    <p>Sign Up with Facebook</p>
+                </button>
+                <div class="list">
+                    <p>
+                        <i class="fas fa-key"></i>  We keep it private</br>
+                        <i class="fas fa-shield-alt"></i>  Share only with permission</br>
+                        <i class="far fa-dot-circle"></i>  Quick sign in-no passwords
+                    </p>
+                </div>
+            </div>
+
+            <div id="caform">
+                <div class="caform-p">
+                    <p>Or,Create an account with your Email</p>
+                </div>
+                 <form id="form">
+                    <div id="firstName">
+                        Given/First Name</br>
+                        <input type="text" id="cafirstname">
+                    </div>
+                    <div id="surname">
+                        Surname/Last Name</br><input type="text" id="casurname">
+                    </div>
+                     <div id="email">
+                        Email Address</br><input type="email" id="caemail">
+                    </div>
+                     <div id="password">
+                        Password</br><input type="password" id="capassword">
+                    </div>
+                     <div id="conpassword">
+                        Confirm Password</br><input type="password" id="caconpassword">
+                    </div> 
+                    <div id="check-box">
+                        <input type="checkbox" id="firstp">
+                        <label for="firstp"> Please send me Travelocity.com emails with travel deals, special offers, and other information.</label>
+                    </div>
+                     <div id="check-box1">
+                        <input type="checkbox" id="secondp">
+                        <label for="secondp"> I have read and agree to the <a href="#">Terms of Use</a>and the <a href="#">Privacy Policy</a></label>
+                    </div>
+ 
+                    <div id="submit-button">
+                        <button id="cabutton">Create Account</button>
+                    </div>
+                </form>
+
+            </div> 
+        </div>
+    </div>
+</body>
+<script src="create_account.js"></script>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelocity</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="javascript.js"></script>
+    <!--        CSS and JS File Of Navbar   -->
+    <link rel="stylesheet" href="navbar.css">
+    <script src="NavBar.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!---------------------    Nav Bar Start ----------------------------->
+
+
+    <nav class="navbar">
+        <a href="#" class="navLogo">
+            <img src="https://i.ibb.co/c8Jzh7C/logo.png" />
+        </a>
+        <div class="navDropdown">
+            <button onclick="moreTravel()" class="navDropbtn">More Travel</button>
+            <div id="myDropdown" class="navDropdown_cont">
+                <a href="packages.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+
+                    Packages
+
+                </a>
+                <a href="hotels.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+                    Hotels
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+                    Cars
+
+                </a>
+                <a href="flightspage.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+                    Flights
+
+                </a>
+                <a href="cruiser.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+                    Cruises
+
+                </a>
+                <a href="thingstodo.html">Things to do</a>
+                <a href="#">Tips for Me</a>
+                <a href="#">Discover</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+                    Vaction Rentals
+                </a>
+                <a href="#">Travel Deals</a>
+                <a href="#">Get Inspired</a>
+            </div>
+        </div>
+
+
+        <a href="https://www.travelocity.com/es/Actividades?langid=2058&tpid=80001&eapid=0" target="_blank"    class="navA1">Espanol</a>
+        <a href="#" class="navA2">List Your property</a>
+        <a href="#" class="navA3">Support</a>
+        <a href="#" class="navA4">Trips</a>
+
+
+        <div class="Signin">
+            <button onclick="myFunction()" class="signinBtn">Sign In</button>
+            <div id="mySignin" class="Signin-content">
+                <h4 class="h4_margin">Members can access discounts and special features</h4>
+                <a href="signin.html" class="go_to_signin" id="color_white">Sign in</a>
+                <a href="create_account.html" class="go_to_create_account" id="color_blue">Create a free account</a><br>
+                <a href="#" class="a_margin">List of favorites</a>
+                <hr>
+                <a href="#" class="a_margin">Feedback</a>
+            </div>
+        </div>
+
+
+
+    </nav>
+
+    <!---------------------    Nav Bar End ----------------------------->
+
+
+
+
+    <!---------------------   Home Page Top Search Data Start ----------------------------->
+
+
+    <section>
+        <div class="home_page_bcg">
+
+            <div class="bcg_white">
+
+                <div class="sub_cont">
+                    <button class="hotels line_hover" onclick="show('hotels_all');">
+                        <img src="https://i.ibb.co/DRn7d61/hotel.png" class="sub_cont_imgs">
+                        <p class="sub_cont_para ">Hotels</p>
+                        <p id="paraline1" style="display: none;"></p>
+                    </button>
+
+                    <button class="flights line_hover" onclick="show('flights_all');">
+                        <img src="https://i.ibb.co/K5JhtLw/flight.png" class="sub_cont_imgs">
+                        <p class="sub_cont_para ">Flight</p>
+                        <p id="paraline2" style="display: none;"></p>
+
+                    </button>
+
+                    <button class="cars line_hover" onclick="show('cars_all');">
+                        <img src="https://i.ibb.co/J21mBV6/car.png" class="sub_cont_imgs">
+                        <p class="sub_cont_para ">Cars</p>
+                        <p id="paraline3" style="display: none;"></p>
+
+                    </button>
+
+                    <button class="packages line_hover" onclick="show('packages_all');">
+                        <img src="https://i.ibb.co/BCvCM3W/package.png" class="sub_cont_imgs">
+                        <p class="sub_cont_para ">Package</p>
+                        <p id="paraline4" style="display: none;"></p>
+
+                    </button>
+
+                    <button class="things_to_do line_hover" onclick="show('things_to_do_all');">
+                        <img src="https://i.ibb.co/wWm0HBb/to-do.png" class="sub_cont_imgs">
+                        <p class="sub_cont_para ">To Do</p>
+                        <p id="paraline5" style="display: none;"></p>
+
+                    </button>
+
+                    <button class="cruises line_hover" onclick="show('cruises_all');">
+                        <img src="https://i.ibb.co/KmnS6v4/cruises.png" class="sub_cont_imgs">
+                        <p class="sub_cont_para ">Cruise</p>
+                        <p id="paraline6" style="display: none;"></p>
+
+                    </button>
+                </div>
+                <div class="hr"></div>
+                <div id="hotels_all">
+
+
+
+
+
+                    <!-------------------------     Onclick Card Open Start     ----------------------->
+
+                    <button onclick="Open_Btn1_Card1()" class="btn1">Going To</button>
+                    <div id="openCard" class="btncontent">
+                        <h4 class="h4_margin" style="text-align: center;">Search City Name</h4>
+                        <input type="search" class="card1_search" placeholder="Where are you going?">
+                        <br><br><br><br><br><br>
+                        <a href="#" class="go_to_signin" id="color_white">Search</a>
+                        <br>
+
+                    </div>
+                    <!-------------------------     Onclick Card Open End        ----------------------->
+
+                    <input class="btn2" placeholder="Check In" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                    <input class="btn3" placeholder="Check Out" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                    <!-------------------------     Onclick Card Open Start     ----------------------->
+
+                    <button onclick="Open_Btn4_Card2()" class="btn4">Travelers</button>
+                    <div id="openCard2" class="btn4_content">
+                        <h4 class="h4_margin" style="color: rgb(51, 51, 51);">Travelers</h4>
+                        <hr>
+                        <h4 class="h4_margin">Room 1</h4>
+                        <h4 class="h4_margin" style="color: grey; float: left;">Adults</h4>
+                        <div class="h4_magin" style="float: right; margin-right: 10px;">
+                            <input type="button" value="-" onclick="minus()">
+                            <input style="width: 20px;" type="text" size="25" value="1" id="count">
+                            <input type="button" value="+" onclick="plus()">
+                        </div>
+
+                        <br><br><br><br>
+                        <a href="#" class="go_to_signin" id="color_white">Done</a>
+                        <br>
+                    </div>
+
+                    <!-------------------------     Onclick Card Open End        ----------------------->
+
+
+
+                    <br>
+                    <input class="checkbox1" type="checkbox" id="myCheck" onclick="checkbox_CreateElement()">
+                    <label for="checkbox1">Add a flight</label>
+
+
+
+
+                    <input type="checkbox" class="checkbox2">
+                    <label for="checkbox1">Add a car</label>
+                    <button class="btn1" id="text" style="display:none">Leaving From</button>
+
+                    <button class="search">Search</button><br>
+
+                </div>
+
+
+
+                <div id="flights_all" style="display: none;">
+                    <button class="btn1">Leaving From</button>
+
+                    <input class="btn2" placeholder="Departing" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                    <input class="btn3" placeholder="Returning" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                    <button class="btn4">Going To</button>
+
+
+                    <input type="checkbox" class="checkbox2">
+                    <label for="checkbox1">Add a Place to Stay</label>
+                    <input type="checkbox" class="checkbox2">
+                    <label for="checkbox1">Add a car</label>
+
+                    <button class="search">Search</button><br>
+
+                </div>
+
+
+                <div id="cars_all" style="display: none;">
+                    <button class="btn1">Going To</button>
+                    <input class="btn2" placeholder="Check In" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                    <input class="btn3" placeholder="Check Out" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                    <button class="btn4">travelers</button>
+
+
+
+
+                    <input class="checkbox1" type="checkbox" id="myCheck" onclick="checkbox_CreateElement()">
+                    <label for="checkbox1">Add a flight</label>
+
+
+
+
+                    <input type="checkbox" class="checkbox2">
+                    <label for="checkbox1">Add a car</label>
+                    <button class="btn1" id="text" style="display:none">Leaving From</button>
+
+                    <button class="search">Search</button><br>
+
+                </div>
+
+                <div id="packages_all" style="display: none;">
+                    <button class="btn1">Leaving From</button>
+                    <input class="btn2" placeholder="Departing" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                    <input class="btn3" placeholder="Returning" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                    <button class="btn4">Going To</button>
+
+
+
+
+                    <input type="checkbox" class="checkbox2">
+                    <label for="checkbox1">I only need accommodations for part of my trip</label>
+
+                    <button class="search">Search</button><br>
+
+
+                </div>
+                <div id="things_to_do_all" style="display: none;">
+                    <button class="btn1">Things To Go</button>
+                    <input class="btn2" placeholder="From" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                    <input class="btn3" placeholder="To" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+
+
+
+
+
+                    <input class="checkbox1" type="checkbox" id="myCheck" onclick="checkbox_CreateElement()">
+                    <label for="checkbox1">Add a flight</label>
+
+
+
+
+                    <input type="checkbox" class="checkbox2">
+                    <label for="checkbox1">Add a car</label>
+                    <button class="btn1" id="text" style="display:none">Leaving From</button>
+
+                    <button class="search">Search</button><br>
+
+
+                </div>
+                <div id="cruises_all" style="display: none;">
+                    <button class="btn1">Going To</button>
+                    <input class="btn2" placeholder="Check In" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                    <input class="btn3" placeholder="Check Out" type="text" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                    <button class="btn4">travelers</button>
+
+
+
+
+                    <input class="checkbox1" type="checkbox" id="myCheck" onclick="checkbox_CreateElement()">
+                    <label for="checkbox1">Add a flight</label>
+
+
+
+
+                    <input type="checkbox" class="checkbox2">
+                    <label for="checkbox1">Add a car</label>
+                    <button class="btn1" id="text" style="display:none">Leaving From</button>
+
+                    <button class="search">Search</button><br>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!---------------------   Home Page Top Search End  ----------------------------->
+
+
+    <div id="pooransDiv1">
+        <div id="pooransDiv1Main1">
+            <img src="https://i.postimg.cc/NGWWGqBS/pooransdiv1img1.png" alt="" class="pooransDiv1img">
+            <p class="pooransDiv1para clear">Plan a trip for the whole family—from family travel tips to family-friendly
+                filters, our tools make it easy.</p>
+        </div>
+        <div id="pooransDiv1Main2">
+            <img src="https://i.postimg.cc/8cZ8zs4S/pooransdiv1img2.jpg" alt="" class="pooransDiv1img">
+            <p class="pooransDiv1para clear">Read reviews from other travelers, plus if you find a better price we’ll
+                match it with our Price Match Guarantee.</p>
+        </div>
+        <div id="pooransDiv1Main3">
+            <img src="https://i.postimg.cc/cHTkQ2n7/pooransdiv1img3.png" alt="" class="pooransDiv1img">
+            <p class="pooransDiv1para clear">Need more help along your journey? We offer 24/7 support on social and
+                through virtual agents onsite.</p>
+        </div>
+    </div>
+    <h2 id="pooransDiv2h2">Featured travel</h2>
+    <div id="pooransDiv2">
+        <div id="pooransDiv2Main1">
+            <img src="https://i.postimg.cc/52w3BDcH/pooransdiv2main1img1.jpg" alt="" id="pooransDiv2main1img">
+            <h3 id="pooransDiv2Main1H3">Travel Locally</h3>
+            <p id="pooransDiv2Main1Para">Escapes near home you can take with the entire family.</p>
+        </div>
+        <div id="pooransDiv2Main2">
+            <div id="pooransDiv2Main2Div1">
+                <div class="smallDiv1">
+                    <img src="https://i.postimg.cc/wB2QPJjg/small-Div1img1.jpg" alt="">
+                </div>
+                <div class="smallDiv2">
+                    <h3>Plans up in the Air ?</h3>
+                    <p>These hotels offer more flexibility should they change last minute.</p>
+                </div>
+            </div>
+            <div id="pooransDiv2Main2Div2">
+                <div class="smallDiv1">
+                    <img src="https://i.postimg.cc/Jnh5WnsJ/small-Div1img2.jpg" alt="">
+                </div>
+                <div class="smallDiv2">
+                    <h3>It's okay to wing it</h3>
+                    <p>Several major airlines are waiving change fees—no reason not to book!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 id="pooransDiv3h2" class="clear">In the spotlight</h2>
+    <div id="pooransDiv3" class="clear">
+        <h2 id="pooransDiv3H2">Wander Wisley with great deals</h2>
+        <br>
+        <p id="pooransDiv3para">Travelling now or planning a trip for later? Let us help.</p>
+    </div>
+    <div id="coronaNotification">
+        <svg aria-hidden="true" height="100%" viewBox="0 0 24 24" width="100%">
+            <path fill-rule="evenodd"
+                d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 17v-2h2v2h-2zm3.17-6.83C15.07 11.25 16 10.4 16 9a4 4 0 10-8 0h2c0-1.1.9-2 2-2a2 2 0 012 2c0 1.16-1.1 1.92-1.83 2.67A4.47 4.47 0 0011 15h2c0-1.5.45-2.1 1.17-2.83z"
+                clip-rule="evenodd"></path>
+        </svg>
+        <div>
+            <h4>Has COVID-19 changed your travel plans?</h4>
+            <p>Use credits or coupons, cancel your trip, check refund status, and more.</p>
+            <br>
+            <a href="#">Get started</a>
+        </div>
+    </div>
+    <h2 id="pooransDiv5h2">Family traveltips + inspiration</h2>
+    <div id="pooransDiv5">
+        <div id="pooransDiv5Div1">
+            <h2 class="pooransDiv5h3">Learn a new skill on vacation with kids</h2>
+        </div>
+        <div id="pooransDiv5Div2">
+            <h2 class="pooransDiv5h3">10 road trips your family will love</h2>
+        </div>
+        <div id="pooransDiv5Div3">
+            <h2 class="pooransDiv5h3">How to travel with another family</h2>
+        </div>
+    </div>
+    <div id="pooransDiv6">
+        <div id="pooransDiv6Main1">
+        </div>
+        <div id="pooransDiv6Main2">
+            <div id="pooransDiv6Main2Div1">
+                <h2 id="getlinkh2">Wander Wisely with the Travelocity app</h2>
+                <ul id="getlinkul">
+                    <li>Get helpful alerts about flight status and gate numbers</li>
+                    <li>Access all your travel details, even when offline</li>
+                    <li>Easily contact your hotel by messaging them right in the app</li>
+                </ul>
+                <h3 id="getlinkh3">Text yourself a download link</h3>
+                <div id="getlinkofwebsite">
+                    <div id="country">
+                        <label for="countrycode">Country Code</label>
+                        <select id="countrycode">
+                        </select>
+                    </div>
+                    <div id="phone">
+                        <label for="phonenumber">Phone number</label>
+                        <input type="number" id="phonenumber">
+                    </div>
+                    <div id="getlinkbtn">
+                        <button id="getlinkbtnmain">Get the app</button>
+                    </div>
+                </div>
+                <p id="getlinkpara">By providing your number, you agree to receive a one-time automated text message
+                    with a link to get the app. Standard text message rates may apply.</p>
+            </div>
+            <div id="pooransDiv6Main2Div2">
+                <img src="https://i.postimg.cc/k5qyfw9T/Qr.jpg" alt="" id="Qrimg">
+                <h4>Scan the Qr Code</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Amol's Code -->
+    <div style="margin: 100px; "></div>
+
+    <h1 id="above_footer">Destination ideas to plan your next trip</h1>
+
+    <div id="amol_footer">
+
+        <div id="amol_footer_box1">
+            <div class="amol_dropdown">
+                <button type="button" class="amol_collapsible">Hotels </button>
+                <div class="amol_content">
+                    <div><a href="#">Chicago Hotels</a></div>
+                    <div><a href="#">Baltimore Hotels</a></div>
+                    <div><a href="#">San Hose Hotels</a></div>
+                    <div><a href="#">Las Vegas Hotels</a></div>
+                    <div><a href="#">Maui Hotels</a></div>
+                    <div><a href="#">Oakland Hotels</a></div>
+                    <div><a href="#">Fort Walton beach Hotels</a></div>
+                    <div><a href="#">Washington,DC Hotels</a></div>
+                    <div><a href="#">London Hotels</a></div>
+                    <div><a href="#">Paris Hotels </a></div>
+                    <div><a href="#">Cancun Hotels</a></div>
+                    <div><a href="#">Punta Cana Hotels</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="amol_footer_box2">
+            <div class="amol_dropdown">
+                <button type="button" class="amol_collapsible">Flights </button>
+                <div class="amol_content">
+                    <div><a href="#">Flights to London</a></div>
+                    <div><a href="#">Flights to Maui</a></div>
+                    <div><a href="#">Flights to Washington, DC</a></div>
+                    <div><a href="#">Flights to Fort Lauderdale</a></div>
+                    <div><a href="#">Flights to St. Louis</a></div>
+                    <div><a href="#">Flights to Frankfurt</a></div>
+                    <div><a href="#">Flights to Barcelona</a></div>
+                    <div><a href="#">Flights to Baltimore</a></div>
+                    <div><a href="#">Flights to Paris</a></div>
+                    <div><a href="#">Flights to Orange County </a></div>
+                    <div><a href="#">Flights to Honolulu</a></div>
+                    <div><a href="#">Flights to Los Cabos</a></div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="amol_footer_box3">
+            <div class="amol_dropdown">
+                <button type="button" class="amol_collapsible">Vacation Pakages </button>
+                <div class="amol_content">
+                    <div><a href="#">Orlando Vacations</a></div>
+                    <div><a href="#">San Diego Vacations</a></div>
+                    <div><a href="#">Miami Vacations</a></div>
+                    <div><a href="#">Nassau Vacations</a></div>
+                    <div><a href="#">Seattle Vacations</a></div>
+                    <div><a href="#">San Francisco Vacations</a></div>
+                    <div><a href="#">Denver Vacations</a></div>
+                    <div><a href="#">Montego Bay Vacations </a></div>
+                    <div><a href="#">Los Angeles Vacations</a></div>
+                    <div><a href="#">Las Vegas Vacations </a></div>
+                    <div><a href="#">Cancun Vacations</a></div>
+                    <div><a href="#">Cozumel Vacations</a></div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="amol_footer_box4">
+            <div class="amol_dropdown">
+                <button type="button" class="amol_collapsible">Cars</button>
+                <div class="amol_content">
+                    <div><a href="#">London Car Rentals</a></div>
+                    <div><a href="#">Maui Car Rentals</a></div>
+                    <div><a href="#">Fort Lauderdale Car Rentals</a></div>
+                    <div><a href="#">Honolulu Car Rental</a></div>
+                    <div><a href="#">Newark, NJ Car Rentals</a></div>
+                    <div><a href="#">San Juan Car Rentals</a></div>
+                    <div><a href="#">Dublin Car Rentals</a></div>
+                    <div><a href="#">Barcelona Car Rentals </a></div>
+                    <div><a href="#">Washington, DC Car Rentals</a></div>
+                    <div><a href="#">West Palm Beach Car Rentals</a></div>
+                    <div><a href="#">Madrid Car Rentals</a></div>
+                    <div><a href="#">Paris Car Rentals</a></div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="amol_footer_box5">
+            <div class="amol_dropdown">
+                <button type="button" class="amol_collapsible">Cruises </button>
+                <div class="amol_content">
+                    <div><a href="#">Bahamas Cruises</a></div>
+                    <div><a href="#">Canada/New England Cruises</a></div>
+                    <div><a href="#">Hawaii Cruises</a></div>
+                    <div><a href="#">Mexico Cruises</a></div>
+                    <div><a href="#">Australia/New Zealand Cruises</a></div>
+                    <div><a href="#">Alaskan Cruises</a></div>
+                    <div><a href="#">European Cruises</a></div>
+                    <div><a href="#">Bermuda Cruises </a></div>
+                    <div><a href="#">South Pacific Cruises</a></div>
+                    <div><a href="#">Panama Canal Cruises </a></div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="amol_footer_box6">
+            <div class="amol_dropdown">
+                <button type="button" class="amol_collapsible">All inclusive resorts </button>
+                <div class="amol_content">
+                    <div><a href="#">Top All-Inclusive Resorts</a></div>
+                    <div><a href="#">All Inclusive Resorts Adults Only</a></div>
+                    <div><a href="#">All Inclusive Beach Resorts</a></div>
+                    <div><a href="#">All Inclusive Family Resorts</a></div>
+                    <div><a href="#">Cheap All Inclusive Resorts</a></div>
+                    <div><a href="#">All Inclusive Resorts Couples Only</a></div>
+                    <div><a href="#">Best All Inclusive Resorts for Couples on a Budget</a></div>
+                    <div><a href="#">Luxury All Inclusive Resorts Adults Only</a></div>
+                    <div><a href="#">Best Adults Only All Inclusive Resorts for Couples</a></div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="amol_footer_box7">
+            <div class="amol_dropdown">
+                <button type="button" class="amol_collapsible">Travel Deals </button>
+                <div class="amol_content">
+                    <div><a href="#">Vacation Package Deals</a></div>
+                    <div><a href="#">Travel Deals</a></div>
+                    <div><a href="#">Daily Travel Deals</a></div>
+                    <div><a href="#">Hotel Deals</a></div>
+                    <div><a href="#">Travelocity Coupon Code</a></div>
+                    <div><a href="#">Last Minute Travel Deals</a></div>
+                    <div><a href="#">Hotels Under $99</a></div>
+                    <div><a href="#">All Inclusive Resort Deals </a></div>
+                    <div><a href="#">Flights Under $200</a></div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+    <div style="height: 250px;  "></div>
+
+    <div id="below_footer">
+        <a>About Travelocity</a>
+        <a>Customer Support</a>
+        <a>Press Room</a>
+        <a>Advertising</a>
+        <a>Jobs</a>
+        <a>TV Ads</a>
+        <a>Privacy Policy</a>
+        <a>Terms of Use</a>
+        <a>Site Map</a>
+        <a>Accessibility</a>
+        <a>Support</a>
+        <a>Do Not Sell My Personal Information</a>
+    </div>
+
+    <div id="footer_copyright_text">
+        © 2021 Travelscape LLC, An Expedia Group Company. All rights reserved. Travelocity, the Stars Design, and The
+        Roaming Gnome Design are trademarks of Travelscape LLC. Use of this Web site constitutes acceptance of the
+        Travelocity User Agreement and Privacy Policy. <br />CST# 2083930-50
+    </div>
+
+
+    <div id="footer_img"><img
+            src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" />
+    </div>
+
+    <div style="height: 50px;  "></div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

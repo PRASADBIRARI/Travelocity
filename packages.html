@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+    <link rel="stylesheet" href="css.css">
+
+    <script src="javascript.js"></script>
+
+    <!--        CSS and JS File Of Navbar   -->
+    <link rel="stylesheet" href="navbar.css">
+    <script src="NavBar.js"></script>
+
+    <style>
+
+    </style>
+
+</head>
+<body>
+
+    <!---------------------    Nav Bar Start ----------------------------->
+
+
+    <nav class="navbar">
+        <a href="index.html" class="navLogo">
+            <img src="https://i.ibb.co/c8Jzh7C/logo.png" />
+        </a>
+        <div class="navDropdown">
+            <button onclick="moreTravel()" class="navDropbtn">More Travel</button>
+            <div id="myDropdown" class="navDropdown_cont">
+                <a href="packages.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+
+                    Packages
+
+                </a>
+                <a href="hotels.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+                    Hotels
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+                    Cars
+
+                </a>
+                <a href="flightspage.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+                    Flights
+
+                </a>
+                <a href="cruiser.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+                    Cruises
+
+                </a>
+                <a href="thingstodo.html">Things to do</a>
+                <a href="#">Tips for Me</a>
+                <a href="#">Discover</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
+                    Vaction Rentals
+                </a>
+                <a href="#">Travel Deals</a>
+                <a href="#">Get Inspired</a>
+            </div>
+        </div>
+
+
+        <a href="#" class="navA1">Espanol</a>
+        <a href="#" class="navA2">List Your property</a>
+        <a href="#" class="navA3">Support</a>
+        <a href="#" class="navA4">Trips</a>
+   
+
+        <div class="Signin">
+            <button onclick="myFunction()" class="signinBtn">Sign In</button>
+            <div id="mySignin" class="Signin-content">
+                <h4 class="h4_margin">Members can access discounts and special features</h4>
+                <a href="signin.html" class="go_to_signin" id="color_white">Sign in</a>
+                <a href="create_account.html" class="go_to_create_account" id="color_blue">Create a free account</a><br>
+                <a href="#" class="a_margin">List of favorites</a>
+                <hr>
+                <a href="#" class="a_margin">Feedback</a>
+            </div>
+        </div>
+
+
+
+    </nav>
+
+    <!---------------------    Nav Bar End ----------------------------->
+<div id="amol_package_bg">
+     <!---------------------   Corona notification Start ----------------------------->
+    <div id="hotelCoronaNotification">
+        <div id="hotelCoronaNotificationDiv1">
+            <svg id="alertsvg" aria-hidden="true" height="100%" viewBox="0 0 24 24" width="100%">
+                <path fill-rule="evenodd" d="M23 21L12 2 1 21h22zm-12-3v-2h2v2h-2zm0-4h2v-4h-2v4z"
+                    clip-rule="evenodd">
+                </path>
+            </svg>
+        </div>
+        <div id="hotelCoronaNotificationDiv2">
+            <p id="hotelCoronaNotificationDiv2para">Need help with travel plans impacted by COVID-19? Your online
+                itinerary is the best place to cancel your
+                trip. For more information about refund timelines or other help, visit the Customer Support Portal.
+            </p>
+            <a href="#" target="_blank" class="hotelCoronaNotificationatag">Go to your itinerary</a>
+            <a href="#" target="_blank" class="hotelCoronaNotificationatag" id="a1">View Customer support</a>
+        </div>
+    </div>
+    <!---------------------   Corona notification end ----------------------------->
+
+    <div id="amol_package_search">
+        <h1>Build a package</h1>
+        <p>Choose one or more items to build your trip:</p>
+        <div id="amol_package_buttonBox">
+                <div id="amol_bdiv1">Hotel Added</div>
+                <div id="amol_bdiv2">Flight Added</div>
+                <div id="amol_bdiv3">Add a Car</div>
+        </div>
+        <div id="amol_package_inputs">
+            <input type="text"  id="amol_ip1" placeholder="Leaving From" />
+            <input type="text" id="amol_ip2" placeholder="Going to" />
+            <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="amol_ip3" placeholder="Departing From" />
+            <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="amol_ip4" placeholder="Returning" />
+        </div>
+        <div id="amol_package_checkbox">
+            <input id="amol_checkbox" type="checkbox" /> <span>I only need accommodations for part of my trip</span> 
+            
+        </div>
+        <button id="amol_package_button">Search</button>
+    </div>
+
+</div>
+
+    <!---------------------    Pooran's Code starts here ----------------------------->
+
+
+                    
+
+    
+    <div id="pooransDiv1">
+        <div id="pooransDiv1Main1">
+            <img src="https://i.postimg.cc/NGWWGqBS/pooransdiv1img1.png" alt="" class="pooransDiv1img">
+            <p class="pooransDiv1para clear">Plan a trip for the whole family—from family travel tips to family-friendly
+                filters, our tools make it easy.</p>
+            </div>
+            <div id="pooransDiv1Main2">
+                <img src="https://i.postimg.cc/8cZ8zs4S/pooransdiv1img2.jpg" alt="" class="pooransDiv1img">
+            <p class="pooransDiv1para clear">Read reviews from other travelers, plus if you find a better price we’ll
+                match it with our Price Match Guarantee.</p>
+            </div>
+            <div id="pooransDiv1Main3">
+                <img src="https://i.postimg.cc/cHTkQ2n7/pooransdiv1img3.png" alt="" class="pooransDiv1img">
+            <p class="pooransDiv1para clear">Need more help along your journey? We offer 24/7 support on social and
+                through virtual agents onsite.</p>
+            </div>
+        </div>
+        <h2 id="pooransDiv2h2">Featured travel</h2>
+        <div id="pooransDiv2">
+            <div id="pooransDiv2Main1">
+                <img src="https://i.postimg.cc/52w3BDcH/pooransdiv2main1img1.jpg" alt="" id="pooransDiv2main1img">
+                <h3 id="pooransDiv2Main1H3">Travel Locally</h3>
+            <p id="pooransDiv2Main1Para">Escapes near home you can take with the entire family.</p>
+        </div>
+        <div id="pooransDiv2Main2">
+            <div id="pooransDiv2Main2Div1">
+                <div class="smallDiv1">
+                    <img src="https://i.postimg.cc/wB2QPJjg/small-Div1img1.jpg" alt="">
+                </div>
+                <div class="smallDiv2">
+                    <h3>Plans up in the Air ?</h3>
+                    <p>These hotels offer more flexibility should they change last minute.</p>
+                </div>
+            </div>
+            <div id="pooransDiv2Main2Div2">
+                <div class="smallDiv1">
+                    <img src="https://i.postimg.cc/Jnh5WnsJ/small-Div1img2.jpg" alt="">
+                </div>
+                <div class="smallDiv2">
+                    <h3>It's okay to wing it</h3>
+                    <p>Several major airlines are waiving change fees—no reason not to book!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 id="pooransDiv3h2" class="clear">In the spotlight</h2>
+    <div id="pooransDiv3" class="clear">
+         <h2 id="pooransDiv3H2">Wander Wisley with great deals</h2>
+         <br>
+         <p id="pooransDiv3para">Travelling now or planning a trip for later? Let us help.</p>
+        </div>
+        <div id="coronaNotification">
+            <svg aria-hidden="true" height="100%" viewBox="0 0 24 24" width="100%" ><path fill-rule="evenodd" d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 17v-2h2v2h-2zm3.17-6.83C15.07 11.25 16 10.4 16 9a4 4 0 10-8 0h2c0-1.1.9-2 2-2a2 2 0 012 2c0 1.16-1.1 1.92-1.83 2.67A4.47 4.47 0 0011 15h2c0-1.5.45-2.1 1.17-2.83z" clip-rule="evenodd"></path></svg>
+        <div>
+            <h4>Has COVID-19 changed your travel plans?</h4>
+            <p>Use credits or coupons, cancel your trip, check refund status, and more.</p>
+            <br>
+            <a href="#">Get started</a>
+        </div>
+    </div>
+
+    <!-- code for PooransnewDiv Starts Here -->
+    <h2 id="pooransnewDivh2">Deals designed for you</h2>
+    <div id="pooransnewDiv">
+     <div id="pooransnewDiv1">
+         <h3 class="h3newDiv">Family</h3>
+     </div>
+     <div id="pooransnewDiv2">
+       <h3 class="h3newDiv">Last Minute</h3>
+     </div>
+     <div id="pooransnewDiv3">
+       <h3 class="h3newDiv">Beach</h3>
+     </div>
+     <div id="pooransnewDiv4">
+       <h3 class="h3newDiv">All-inclusive</h3>
+     </div>
+     <div id="pooransnewDiv5">
+       <h3 class="h3newDiv">Pet Friendly</h3>
+     </div>
+     <div id="pooransnewDiv6">
+       <h3 class="h3newDiv">Luxury</h3>
+     </div>
+    </div>
+     <!-- code for PooransnewDiv Ends Here -->
+    
+
+    <div id="pooransDiv6">
+        <div id="pooransDiv6Main1">
+        </div>
+        <div id="pooransDiv6Main2">
+         <div id="pooransDiv6Main2Div1">
+             <h2 id="getlinkh2">Wander Wisely with the Travelocity app</h2>
+             <ul  id="getlinkul">
+                 <li>Get helpful alerts about flight status and gate numbers</li>
+                <li>Access all your travel details, even when offline</li>
+                <li>Easily contact your hotel by messaging them right in the app</li>
+            </ul>
+            <h3 id="getlinkh3">Text yourself a download link</h3>
+            <div id="getlinkofwebsite">
+                <div id="country">
+                    <label for="countrycode">Country Code</label>
+                    <select  id="countrycode">
+                    </select>
+                </div>
+                <div id="phone">
+                    <label for="phonenumber">Phone number</label>
+                     <input type="number" id="phonenumber">
+                    </div>
+                    <div id="getlinkbtn">
+                        <button id="getlinkbtnmain">Get the app</button>
+                    </div>
+                </div>
+                <p  id="getlinkpara">By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
+            </div>
+            <div id="pooransDiv6Main2Div2">
+                <img src="https://i.postimg.cc/k5qyfw9T/Qr.jpg" alt="" id="Qrimg">
+                <h4>Scan the Qr Code</h4>
+         </div>
+        </div>
+    </div>
+
+    <!-- Amol's Code -->
+    <div style="margin: 100px; "></div>
+
+    <h1 id="above_footer">Destination ideas to plan your next trip</h1>
+    
+    <div id="amol_footer_packages">
+        
+        <div id="amol_footer_pbox1">
+            <div class="amol_dropdown">
+               <button type="button" class="amol_collapsible">Beach vacation destinations  </button>
+                    <div class="amol_content">
+                        <div><a href="#">Bahamas Vacations</a></div>
+                        <div><a href="#">Bali Vacations</a></div>
+                        <div><a href="#">Bora Bora Vacations</a></div>
+                        <div><a href="#">Cabo San Lucas Vacations</a></div>
+                        <div><a href="#">Dominican Republic Vacations</a></div>
+                        <div><a href="#">Jamaica Vacations</a></div>
+                        <div><a href="#">Kauai Vacations</a></div>
+                        <div><a href="#">Maui Vacations</a></div>
+                        <div><a href="#">Montego Bay Vacations</a></div>
+                        <div><a href="#">Myrtle Beach Vacations </a></div>
+                        <div><a href="#">Playa del Carmen Vacations</a></div>
+                        <div><a href="#">Punta Cana Vacations</a></div>
+                    </div>
+                </div>
+        </div>
+        
+        <div id="amol_footer_pbox2">
+            <div class="amol_dropdown">
+                <button type="button" class="amol_collapsible">City vacation destinations  </button>
+                     <div class="amol_content">
+                         <div><a href="#">Denver Vacations</a></div>
+                         <div><a href="#">Grand Canyon Vacations</a></div>
+                         <div><a href="#">Lake Tahoe Vacations</a></div>
+                         <div><a href="#">Las Vegas Vacations</a></div>
+                         <div><a href="#">Miami Vacations</a></div>
+                         <div><a href="#">New Orleans Vacations</a></div>
+                         <div><a href="#">New York Vacations</a></div>
+                         <div><a href="#">Orlando Vacations</a></div>
+                         <div><a href="#">San Francisco Vacations</a></div>
+                         <div><a href="#">Seattle Vacations </a></div>
+                         
+                     </div>
+                 </div>
+
+
+        </div>
+
+        <div id="amol_footer_pbox3">
+            <div class="amol_dropdown">
+                <button type="button" class="amol_collapsible">Destination deals  </button>
+                     <div class="amol_content">
+                         <div><a href="#">Daily travel deals</a></div>
+                         <div><a href="#">Vacation package deals</a></div>
+                         <div><a href="#">Travel coupons and promo codes</a></div>
+                         <div><a href="#">Last minute travel deals</a></div>
+                         <div><a href="#">Best vacations by country</a></div>
+                         <div><a href="#">Travelocity reviews</a></div>
+                         <div><a href="#">USA vacation packages</a></div>
+                         
+                     </div>
+                 </div>
+
+
+        </div>
+
+        <div id="amol_footer_pbox4">
+            <div class="amol_dropdown">
+                <button type="button" class="amol_collapsible">International city vacations</button>
+                     <div class="amol_content">
+                         <div><a href="#">Amsterdam Vacations</a></div>
+                         <div><a href="#">Barcelona Vacations</a></div>
+                         <div><a href="#">Dublin Vacations</a></div>
+                         <div><a href="#">London Vacations</a></div>
+                         <div><a href="#">Paris Vacations</a></div>
+                         <div><a href="#">Rome Vacations</a></div>
+                         <div><a href="#">Tokyo Vacations</a></div>
+                         <div><a href="#">Venice Vacations</a></div>
+                         
+                     </div>
+                 </div>
+
+
+        </div>
+
+        <div id="amol_footer_pbox5">
+            <div class="amol_dropdown">
+                <button type="button" class="amol_collapsible">International vacation destinations  </button>
+                     <div class="amol_content">
+                         <div><a href="#">Australia Vacations</a></div>
+                         <div><a href="#">Caribbean Vacations</a></div>
+                         <div><a href="#">Costa Rica Vacations</a></div>
+                         <div><a href="#">Dubai Vacations</a></div>
+                         <div><a href="#">Fiji Vacations</a></div>
+                         <div><a href="#">Mexico Vacations</a></div>
+                         <div><a href="#">Thailand Vacations</a></div>
+                         <div><a href="#">United Kingdom Vacations </a></div>
+                         <div><a href="#">U.S. Virgin Islands Vacations</a></div>
+                         
+                         
+                     </div>
+                 </div>
+
+
+        </div>
+
+        
+        
+        
+        
+       
+        
+        
+    </div>
+    <div style="height: 250px;  "></div>
+    
+    <div id="below_footer">
+        <a>About Travelocity</a>
+        <a>Customer Support</a>
+        <a>Press Room</a>
+        <a>Advertising</a>
+        <a>Jobs</a>
+        <a>TV Ads</a>
+        <a>Privacy Policy</a>
+        <a>Terms of Use</a>
+        <a>Site Map</a>
+        <a>Accessibility</a>
+        <a>Support</a>
+        <a>Do Not Sell My Personal Information</a>
+    </div>
+    
+    <div id="footer_copyright_text">
+        © 2021 Travelscape LLC, An Expedia Group Company. All rights reserved. Travelocity, the Stars Design, and The Roaming Gnome Design are trademarks of Travelscape LLC. Use of this Web site constitutes acceptance of the Travelocity User Agreement and Privacy Policy. <br/>CST# 2083930-50
+    </div>
+
+    
+    <div id="footer_img"><img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" /></div>
+    
+    <div style="height: 50px;  "></div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
